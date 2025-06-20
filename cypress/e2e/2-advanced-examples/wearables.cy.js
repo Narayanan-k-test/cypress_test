@@ -14,6 +14,8 @@ describe('Wearables', () => {
         cy.get('#SiteNavSearchCart > .site-header__search > .text-link').click();
         cy.get('#SiteNavSearch').type('Smartwatch{enter}');
         cy.get('p.section-header__subtext').should('contain.text', 'Smartwatch').and('be.visible');
+        cy.contains('Pages and articles').should('be.visible');
+        cy.get('.next > a').click()
     });
     
 });
