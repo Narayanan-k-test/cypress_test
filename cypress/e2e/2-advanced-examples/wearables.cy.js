@@ -16,6 +16,7 @@ describe('Wearables', () => {
         cy.get('p.section-header__subtext').should('contain.text', 'Smartwatch').and('be.visible');
         cy.contains('Pages and articles').should('be.visible');
         cy.get('.next > a').click()
+        cy.log('Navigated to the next page');
     });
     
 });
