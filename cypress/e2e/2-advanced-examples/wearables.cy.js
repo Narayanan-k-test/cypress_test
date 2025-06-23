@@ -17,6 +17,7 @@ describe('Wearables', () => {
         cy.contains('Pages and articles').should('be.visible');
         cy.get('.next > a').click()
         cy.log('Navigated to the next page');
+        cy.contains('Menu').should('be.visible').click();
     });
     
 });
